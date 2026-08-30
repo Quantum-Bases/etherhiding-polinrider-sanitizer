@@ -793,7 +793,7 @@ The tools in this repository (`verify.sh`, `sanitize.sh`) are the **antibiotics/
 public/fonts/*.woff2           (check if binary or text)
 .vscode/tasks.json             (check for runOn: folderOpen)
 .vscode/settings.json          (check for allowAutomaticTasks: true)
-global.i="A8-*"                (C2 identifier)
+
 temp_auto_push.bat             (persistence script)
 branch_structure.json          (enumeration data)
 ```

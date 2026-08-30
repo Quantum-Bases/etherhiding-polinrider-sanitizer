@@ -231,7 +231,7 @@ Removes embedded command-and-control code:
 
 ```bash
 # Removes lines like:
-# global.i="A8-c9847fh934n7"
+#
 # const _0x3847a=_0x928fa8;
 # import { createRequire } from 'module';
 ```
@@ -331,7 +331,7 @@ Auditing Target: my-org...
 ./fonts/fa-solid-400.woff2
 ❌ [THREAT FOUND] Malicious VS Code Task in my-org/repo-1 [main]
 ❌ [THREAT FOUND] Injected C2 Code in my-org/repo-2 [develop]:
-./src/index.js:15:global.i="A8-abc123xyz"
+./src/index.js:15:
 ==================================================
 ⚠️ Audit detected 3 threat instances.
 ==================================================
@@ -358,7 +358,7 @@ Searches `.vscode/tasks.json` for auto-executing tasks with patterns:
 
 #### **Detection 3: Injected C2 Payloads**
 Searches all code files for command-and-control indicators:
-- `global.i="A8-..."` - Hex-encoded C2 identifiers
+- `
 - `global[.i]` variants - Obfuscated global access
 - `branch_structure.json` - Branch enumeration artifact
 - `temp_auto_push.bat` - Persistence batch file

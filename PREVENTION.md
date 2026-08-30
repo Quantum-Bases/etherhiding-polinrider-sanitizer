@@ -461,7 +461,7 @@ branch_structure.json
 
 ```javascript
 // ❌ Red flag: hex-encoded C2 identifier
-global.i="A8-abc123xyz"
+
 global["i"]="A8-abc123xyz"
 
 // ❌ Red flag: obfuscated variable declarations
